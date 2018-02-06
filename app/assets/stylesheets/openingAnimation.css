@@ -1,0 +1,21 @@
+.animate {
+  margin-top: 15%;
+  width: 15%;
+  /* max-height: 15%; */
+  margin-left: 42.5%;
+  margin-right: 42.5%;
+
+}
+
+.animate-box {
+  margin-top: 15%;
+  width: 15%;
+  /* margin-right: 49%; */
+  margin-left: 40%;
+}
+
+.animate-text {
+  width: 150%;
+  font-size: 35px;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+}

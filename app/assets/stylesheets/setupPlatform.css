@@ -1,0 +1,106 @@
+.parent-element {
+  width: 40%;
+  min-width: 600px;
+  height: 10%;
+  margin-left: 28%;
+  margin-right: 30%;
+  margin-top: 15%;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
+  /* background-image: url('https://www1.bac-assets.com/auto-loans/spa-assets/images/assets-images-global-title-flagscape_red-CSX345e7fd7.svg'); */
+  background-color: rgb(220, 20, 49);
+  border-radius: 1.5%;
+  border-style: outset;
+  /* color: #0052C2; */
+  color: white;
+  font-size: 25px;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+.grandparent {
+  width: 100%;
+  height: 100%;
+}
+
+.loan-type-text {
+  margin-left: 13.5%;
+  margin-right: 5%;
+}
+
+.loan-options {
+  margin-left: 12%;
+  background-color: rgb(220, 20, 49);
+  margin-top: 2%;
+}
+
+.loan-selector {
+  width: 130px;
+  height: 75px;
+  font-size: 19px;
+  border-radius: 3%;
+  margin: 2%;
+}
+
+.loan-selector:hover, .advance-button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #0052C2;
+  border-color: black;
+  border-style: dashed;
+}
+
+button {
+  background-color: rgb(220, 20, 49);
+  color: white;
+}
+
+.info-holder {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 2.5%;
+  width: 50%;
+}
+
+.info-label {
+  width: 50%;
+  margin-bottom: 1%;
+}
+
+.info-input {
+  line-height: 1.9em;
+  border-radius: 8%;
+  font-size: 13px;
+  border-color: #0052C2;
+  padding-left: 2%;
+}
+
+.info-parent-holder {
+  margin-left: 28%;
+  margin-right: 30%;
+  margin-top: 11%;
+  width: 40%;
+  padding-top: 1.5%;
+  padding-bottom: 5.5%;
+  position: relative;
+}
+
+.advance-button {
+  width: 175px;
+  height: 45px;
+  position: absolute;
+  left: 36%;
+  margin-top: 3%;
+  font-size: 18px;
+}
+
+.thank-you {
+  width: 100%;
+  padding-top: 10%;
+  font-size: 24px;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  text-align: center;
+}
