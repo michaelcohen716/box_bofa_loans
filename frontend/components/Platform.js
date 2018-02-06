@@ -83,36 +83,36 @@ class Platform extends React.Component {
 
   upload(){
     const upload = this.uploads[0];
-    console.log(upload);
 
-    // let formData = new FormData();
-    // formData.append(upload.doc.name, upload.doc[0]);
-    // formData.append('parent_id', '0');
-    //
-    // client.files.upload({ body: formData })
-    //   .then(res => console.log(res))
-    //   .catch(err => console.log(err));
-    // });
-    const uploadUrl = 'https://upload.box.com/api/2.0/files/content';
-    const headers = {
-      Authorization: accessToken
-    };
+    let formData = new FormData();
+    formData.append(upload.doc.name, upload.doc[0]);
+    formData.append('parent_id', '0');
 
-    $.ajax({
-        url: uploadUrl,
-        headers: headers,
-        type: 'POST',
-        // This prevents JQuery from trying to append the form as a querystring
-        processData: false,
-        contentType: false,
-        data: upload
-    }).then((data) => {
-        // Log the JSON response to prove this worked
-        console.log(data.responseText);
-    });
+    client.files.upload({ body: formData })
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
 
-    console.log("in upload");
-
+  //   const uploadUrl = 'https://upload.box.com/api/2.0/files/content';
+  //   const headers = {
+  //     Authorization: accessToken
+  //   };
+  //
+  //   $.ajax({
+  //       url: uploadUrl,
+  //       headers: headers,
+  //       type: 'POST',
+  //       // This prevents JQuery from trying to append the form as a querystring
+  //       processData: false,
+  //       contentType: false,
+  //       data: upload
+  //   }).then((data) => {
+  //       // Log the JSON response to prove this worked
+  //       console.log(data.responseText);
+  //   });
+  //
+  //   console.log("in upload");
+  //
+  // }
   }
 
 }
